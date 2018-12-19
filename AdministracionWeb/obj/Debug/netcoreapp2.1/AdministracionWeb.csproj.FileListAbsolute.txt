@@ -33,3 +33,4 @@ C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netco
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Empleados\Empleados.g.cshtml.cs
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Empleados\Agregar.g.cshtml.cs
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Empleados\Editar.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.g.cshtml.cs

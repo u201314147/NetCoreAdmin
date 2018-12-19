@@ -13,8 +13,7 @@ namespace AdministracionWeb.Controllers
     {
         private DataContext db = new DataContext();
 
-        // [Route("")]
-        [Route("~/")]
+        [Route("")]
         public IActionResult Empleados()
         {
             ViewBag.empleados = db.Empleados.ToList();

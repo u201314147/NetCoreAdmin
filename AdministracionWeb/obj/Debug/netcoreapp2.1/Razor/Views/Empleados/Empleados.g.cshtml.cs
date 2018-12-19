@@ -69,7 +69,7 @@ using AdministracionWeb.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(58, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7180a5755b54455abe38047a0c170df3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aed423f73d8140808a2da77b0fde411a", async() => {
                 BeginContext(64, 91, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Empleados</title>\r\n");
                 EndContext();
@@ -89,12 +89,12 @@ using AdministracionWeb.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(164, 1281, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b2ae1b3e225491c9993654eb1135e46", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b371188d568e4800944d4566a21db6c2", async() => {
                 BeginContext(170, 39, true);
                 WriteLiteral("\r\n    <h2>Lista de empleados</h2>\r\n    ");
                 EndContext();
                 BeginContext(209, 71, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d9e455161cb48eb9d07ad43f6c3123d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ef811902ef04fb3911ba953fc55112e", async() => {
                     BeginContext(260, 16, true);
                     WriteLiteral("Agregar Empleado");
                     EndContext();
@@ -221,7 +221,7 @@ WriteAttributeValue("", 1023, Empleado.foto, 1023, 14, false);
                 WriteLiteral(" width=\"100\" /></td>\r\n            <td>\r\n                ");
                 EndContext();
                 BeginContext(1094, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cb7aadcce584afcbe5f4ffd455a0ff5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91694c65719b472e8b0cb9664b78e750", async() => {
                     BeginContext(1181, 6, true);
                     WriteLiteral("Editar");
                     EndContext();
@@ -258,7 +258,7 @@ WriteAttributeValue("", 1023, Empleado.foto, 1023, 14, false);
                 WriteLiteral(" |\r\n                ");
                 EndContext();
                 BeginContext(1211, 160, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "395bb7eeaa7145e8b6f7e482215cab30", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea4704a330804f0bac6a72e99f34fcf3", async() => {
                     BeginContext(1361, 6, true);
                     WriteLiteral("Borrar");
                     EndContext();

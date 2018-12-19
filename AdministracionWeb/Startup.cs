@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,6 +32,18 @@ namespace AdministracionWeb
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Autenticacion:
+            services.AddAuthentication(options =>
+            {
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie(options => { options.LoginPath = "/Login"; });
+            services.AddMvc().AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AuthorizeFolder("/");
+                options.Conventions.AllowAnonymousToPage("/Login");
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -47,6 +60,8 @@ namespace AdministracionWeb
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            //autenticacion:
+            app.UseAuthentication();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

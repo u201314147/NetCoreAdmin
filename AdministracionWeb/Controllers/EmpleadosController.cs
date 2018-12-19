@@ -36,5 +36,32 @@ namespace AdministracionWeb.Controllers
             db.SaveChanges();
             return RedirectToAction("Empleados");
         }
+
+        [HttpGet]
+        [Route("Borrar/{id}")]
+        public IActionResult Borrar(int id)
+        {
+            db.Remove(db.Empleados.Find(id));
+            db.SaveChanges();
+            return RedirectToAction("Empleados");
+        }
+
+
+        [HttpGet]
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            return View("Editar", db.Empleados.Find(id));
+        }
+
+
+        [HttpPost]
+        [Route("Editar/{id?}")]
+        public IActionResult Editar(int id, Empleados empleado)
+        {
+            db.Entry(empleado).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Empleados");
+        }
     }
 }

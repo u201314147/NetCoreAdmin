@@ -37,6 +37,11 @@
             <td>@Empleado.fecha_nacimiento</td>
             <td>@Empleado.fecha_contrato</td>
             <td><img src="@Empleado.foto" width="100" /></td>
+            <td>
+                <a asp-controller="Empleados" asp-action="Editar" asp-route-id="@Empleado.id_empleado">Editar</a> |
+                <a asp-controller="Empleados" asp-action="Borrar" asp-route-id="@Empleado.id_empleado"
+                   onclick="return confirm('¿Estas seguro?')">Borrar</a>
+            </td>
         </tr>
         }
     </table>

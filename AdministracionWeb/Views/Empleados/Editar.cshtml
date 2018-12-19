@@ -9,10 +9,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Agregar</title>
+    <title>Editar</title>
 </head>
 <body>
-    <form method="post" enctype="multipart/form-data" asp-controller="Empleados" asp-action="Agregar">
+    <form method="post" enctype="multipart/form-data" asp-controller="Empleados" asp-action="Editar">
         <table cellpadding="2" cellspacing="2">
             <tr>
                 <td>Nombres</td>
@@ -52,11 +52,16 @@
             <tr>
                 <td>Url de Foto</td>
                 <td><input asp-for="foto" /></td>
+
             </tr>
 
             <tr>
                 <td>&nbsp;</td>
-                <td><input type="submit" value="Guardar" /></td>
+                <td>
+                    <input type="submit" value="Guardar" />
+                    <input type="hidden" asp-for="id_empleado" />
+                </td>
+                
             </tr>
 
 

@@ -13,13 +13,28 @@ namespace AdministracionWeb.Controllers
     {
         private DataContext db = new DataContext();
 
-       // [Route("")]
-       // [Route("~/")]
-
+        // [Route("")]
+        [Route("~/")]
         public IActionResult Empleados()
         {
             ViewBag.empleados = db.Empleados.ToList();
             return View();
+        }
+
+        [HttpGet]
+        [Route("Agregar")]
+        public IActionResult Agregar()
+        {
+            return View("Agregar", new Empleados());
+        }
+
+        [HttpPost]
+        [Route("Agregar")]
+        public IActionResult Agregar(Empleados empleado)
+        {
+            db.Empleados.Add(empleado);
+            db.SaveChanges();
+            return RedirectToAction("Empleados");
         }
     }
 }

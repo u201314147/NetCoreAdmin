@@ -11,7 +11,8 @@
     <title>Empleados</title>
 </head>
 <body>
-    <h2>Lista de empelados</h2>
+    <h2>Lista de empleados</h2>
+    <a asp-controller="Empleados" asp-action="Agregar">Agregar Empleado</a> <br />
     <table border="1">
         <tr>
             <th>Nombres</th>
@@ -35,7 +36,7 @@
             <td>@Empleado.id_tiposangre</td>
             <td>@Empleado.fecha_nacimiento</td>
             <td>@Empleado.fecha_contrato</td>
-            <td>@Empleado.foto</td>
+            <td><img src="@Empleado.foto" width="100" /></td>
         </tr>
         }
     </table>

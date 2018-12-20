@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Empleados</title>
+</head>
+<body>
+    <h2>Lista de empleados</h2>
+    <a asp-controller="Empleados" asp-action="Agregar">Agregar Empleado</a> <br />
+    <table border="1">
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Sexo</th>
+            <th>Estado Civil</th>
+            <th>Tipo Sangre</th>
+            <th>Fecha Nacimiento</th>
+            <th>Fecha Contrato</th>
+            <th>Foto</th>
+
+        </tr>
+
+        @foreach(var Empleado in ViewBag.empleados)
+        {
+        <tr>
+            <td>@Empleado.nombres</td>
+            <td>@Empleado.apellidos</td>
+            <td>@Empleado.id_sexo</td>
+            <td>@Empleado.id_estadocivil </td>
+            <td>@Empleado.id_tiposangre</td>
+            <td>@Empleado.fecha_nacimiento</td>
+            <td>@Empleado.fecha_contrato</td>
+            <td><img src="@Empleado.foto" width="100" /></td>
+            <td>
+                <a asp-controller="Empleados" asp-action="Editar" asp-route-id="@Empleado.id_empleado">Editar</a> |
+                <a asp-controller="Empleados" asp-action="Borrar" asp-route-id="@Empleado.id_empleado"
+                   onclick="return confirm('¿Estas seguro?')">Borrar</a>
+            </td>
+        </tr>
+        }
+    </table>
+    
+</body>
+</html>

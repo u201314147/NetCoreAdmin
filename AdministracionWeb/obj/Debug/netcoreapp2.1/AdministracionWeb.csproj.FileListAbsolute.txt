@@ -34,3 +34,11 @@ C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netco
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Empleados\Agregar.g.cshtml.cs
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Empleados\Editar.g.cshtml.cs
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\icons.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login2.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\map.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\POST.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\typography.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\upgrade.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\user.g.cshtml.cs
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\Empleados\Empleados2.g.cshtml.cs

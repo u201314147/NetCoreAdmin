@@ -1,0 +1,24 @@
+﻿@page
+@model AdministracionWeb.Models.Credenciales
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <p>Iniciar Sesión:</p>
+    <form method="post" asp-controller="Login">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <!--Usuario: <input asp-for="usuario" value="" /><br />
+    Clave: <input asp-for="clave" value="" /><br />
+    Recordarme: <input asp-for="RememberMe" type="checkbox" /><br />-->
+        Usuario: <input value="" /><br />
+        Clave: <input value="" /><br />
+        Recordarme: <input type="checkbox" /><br />
+
+
+        <input type="submit" value="Login" />
+        @Html.AntiForgeryToken()
+    </form>
+</body>
+</html>

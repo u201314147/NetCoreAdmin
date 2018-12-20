@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Empleados\Agregar - Copia.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Empleados\Editar.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

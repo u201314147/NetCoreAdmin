@@ -16,7 +16,7 @@ namespace AdministracionWeb.Models
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
 
             var configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration["ConnectionStrings:DefaultConnection"]);
+            optionsBuilder.UseSqlServer(configuration["ConnectionStrings:AzureConnection"]);
         }
 
         public DbSet<Empleados> Empleados { get; set; }  

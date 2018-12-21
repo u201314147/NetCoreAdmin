@@ -12,14 +12,7 @@
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-
-
-
-
-
-
-
-
+<base
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -616,7 +609,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <label class="col-sm-2 col-form-label">Sexo</label>
                                         <div class="col-sm-10">
                                             <div class="form-group">
-                                                <input asp-for="id_sexo" type="text" class="form-control">
+                                               
+                                                <label>
+                                                    <input type="radio" asp-for="id_sexo" value="0" /> Masculino
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_sexo" value="1" /> Femenino
+                                                </label>
                                             </div>
                                         </div>
 
@@ -625,7 +624,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <label class="col-sm-2 col-form-label">Estado Civil</label>
                                         <div class="col-sm-10">
                                             <div class="form-group">
-                                                <input asp-for="id_estadocivil" type="text" class="form-control">
+
+
+                                                <label>
+                                                    <input type="radio" asp-for="id_estadocivil" value="0" /> Soltero
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_estadocivil" value="1" /> Casado
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_estadocivil" value="2" /> Divorciado
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_estadocivil" value="3" /> Viudo
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -633,7 +645,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <label class="col-sm-2 col-form-label">Tipo de Sangre</label>
                                         <div class="col-sm-10">
                                             <div class="form-group">
-                                                <input asp-for="id_tiposangre" type="text" class="form-control">
+                                                
+                                                <label>
+                                                    <input type="radio" asp-for="id_tiposangre" value="0" /> RH+
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_tiposangre" value="1" /> RH-
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_tiposangre" value="2" /> O+
+                                                </label>
+                                                <label>
+                                                    <input type="radio" asp-for="id_tiposangre" value="3" /> O-
+                                                </label>
                                             </div>
                                         </div>
                                     </div>

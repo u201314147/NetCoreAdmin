@@ -44,3 +44,4 @@ C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netco
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\AdministracionWeb.dll
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\AdministracionWeb.pdb
 C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\AdministracionWeb.csproj.CopyComplete
+C:\Users\ALEXIS\source\repos\AdministracionWeb\AdministracionWeb\obj\Debug\netcoreapp2.1\Razor\Views\dashboard.g.cshtml.cs
